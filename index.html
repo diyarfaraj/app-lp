@@ -13,6 +13,29 @@
 		<!-- Custom styles for this template -->
 		<link href="assets/css/style.css?ver=131" rel="stylesheet">
 		<link href="assets/css/theme.css?ver=131" rel="stylesheet">
+		<style>
+			.mockup-screen {
+				transform-origin: center center;
+				will-change: transform;
+				position: absolute;
+				transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+				width: 100%;
+				height: auto;
+			}
+			.mockup-screen-one {
+				z-index: 3;
+			}
+			.mockup-screen-two {
+				z-index: 2;
+			}
+			.mockup-screen-three {
+				z-index: 1;
+			}
+			.header-mockup {
+				position: relative;
+				min-height: 500px;
+			}
+		</style>
 	</head>
 	<body class="overflow-scroll">
        	
@@ -82,9 +105,9 @@
 							</div>
 						</div><!-- .col -->
 						<div class="col-md-6 header-mockup">
-							<div class="mockup-screen mockup-screen-one wow fadeInRight" data-wow-duration=".5s"><img src="images/hs-1.png" alt="header screen" /></div>
-							<div class="mockup-screen mockup-screen-two wow fadeInRight" data-wow-duration=".5s" data-wow-delay=".3s"><img src="images/hs-2.png" alt="header screen" /></div>
-							<div class="mockup-screen mockup-screen-three wow fadeInRight" data-wow-duration=".5s" data-wow-delay=".6s"><img src="images/hs-3.png" alt="header screen" /></div>
+							<div class="mockup-screen mockup-screen-one wow fadeInRight" data-wow-duration=".5s" id="mockup1"><img src="images/hs-1.png" alt="header screen" /></div>
+							<div class="mockup-screen mockup-screen-two wow fadeInRight" data-wow-duration=".5s" data-wow-delay=".3s" id="mockup2"><img src="images/hs-2.png" alt="header screen" /></div>
+							<div class="mockup-screen mockup-screen-three wow fadeInRight" data-wow-duration=".5s" data-wow-delay=".6s" id="mockup3"><img src="images/hs-3.png" alt="header screen" /></div>
 						</div><!-- .col -->
 					</div><!-- .row -->
 				</div><!-- .container -->
@@ -908,6 +931,43 @@
 		
 		<script src="assets/js/jquery.bundle.js"></script>
 		<script src="assets/js/script.js"></script>
+		
+		<script>
+		document.addEventListener('DOMContentLoaded', function() {
+			const mockups = document.querySelectorAll('.mockup-screen');
+			let isAnimating = false;
+			
+			mockups.forEach(mockup => {
+				mockup.addEventListener('click', function(e) {
+					if (isAnimating) return;
+					isAnimating = true;
+					
+					const clickedMockup = e.currentTarget;
+					const positions = Array.from(mockups).map(m => ({
+						element: m,
+						class: m.className
+					}));
+					
+					// Animate clicked mockup
+					clickedMockup.style.transform = 'translate(20px, -20px) rotate(5deg)';
+					
+					setTimeout(() => {
+						// Update positions
+						mockups[0].className = positions[2].class;
+						mockups[1].className = positions[0].class;
+						mockups[2].className = positions[1].class;
+						
+						// Reset transform
+						clickedMockup.style.transform = 'none';
+						
+						setTimeout(() => {
+							isAnimating = false;
+						}, 800);
+					}, 400);
+				});
+			});
+		});
+		</script>
 		
 	</body>
 </html>
