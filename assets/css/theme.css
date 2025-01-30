@@ -52,14 +52,12 @@ Updated	 :	10.22.2018
 .navbar-default .navbar-toggle:focus {
 	background: #1F65DB;
 }
-.button{
-	background: #FA3821;
-}
+
 .button:hover {
-	background: #1F65DB;
+	background: white;
 }
 .header-texts .button{
-	background: #FA3821;
+	
 	color: #fff;
 }
 .header-texts .button:hover {

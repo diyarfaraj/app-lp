@@ -377,7 +377,9 @@ label.error {
 	display:inline-block;
 	color:#fff;
 	text-align:center;
-	background:#e0486e;
+	background-color: #35096b;
+	background-image: -o-linear-gradient(157deg, #ed355b 0%, #1f65db 100%);
+	background-image: linear-gradient(293deg, #ed355b 0%, #1f65db 100%);
 	-webkit-transition:all .5s ease;
 	-moz-transition:all .5s ease;
 	transition:all .5s ease;
@@ -402,7 +404,7 @@ label.error {
 	text-transform:uppercase;
 }
 .button-transparent{
-	background:transparent;
+	background:transparent !important;
 }
 .button:focus,
 .button:hover{
@@ -2702,10 +2704,10 @@ label.error {
 	color:#666;
 }
 .faq-heading{
-	color:#fff;
+	color:#333;
 }
 .faqs p{
-	color:#fff;
+	color:#333;
 }
 .faq-alt .faqs p{
 	color:#333;
