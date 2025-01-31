@@ -14,7 +14,6 @@
 		<link href="assets/css/style.css?ver=131" rel="stylesheet">
 		<link href="assets/css/theme.css?ver=131" rel="stylesheet">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 		<style>
 			.mockup-screen {
 				transform-origin: center center;
@@ -78,7 +77,7 @@
     </div><!-- .container-fluid -->
 </div><!-- .screenshots-section --> 
 		<div id="statistics"></div>
-		<div id="pricing"></div>
+		<!-- <div id="pricing"></div> -->
 		<div id="testimonial"></div>
 		<div id="contacts"></div>
 		<div id="footer"></div>
@@ -95,7 +94,13 @@
 		================================================== -->
 		<!-- Placed at the end of the document so the pages load faster -->
 		
+		<!-- Load jQuery First -->
 		<script src="assets/js/jquery.bundle.js"></script>
+		
+		<!-- Then Load Owl Carousel -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+		
+		<!-- Then Your Custom Script -->
 		<script src="assets/js/script.js"></script>
 		
 		<script>
@@ -112,8 +117,8 @@
 			await loadSection('features', 'features.html');
 			
 			await loadSection('statistics', 'statistics.html');
-			await loadSection('pricing', 'pricing.html');
-			/* await loadSection('testimonial', 'testimonial.html'); */
+			/*await loadSection('pricing', 'pricing.html');
+			 await loadSection('testimonial', 'testimonial.html'); */
 			await loadSection('contacts', 'contacts.html');
 			await loadSection('footer', 'footer.html');
 		});

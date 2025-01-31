@@ -15,6 +15,8 @@
 		  }
 		}
 	});
+
+
 	
 	// Nav collapse
 	$('.nav-item').on("click",function() {
@@ -300,7 +302,7 @@
 		// Stop here.
       );
 	}
-	
+
 	// Active page menu when click ( only for demo )
 	var url = window.location.href;
 	var $nav_link = $(".dropdown li a");
