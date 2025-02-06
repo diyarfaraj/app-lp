@@ -202,7 +202,7 @@ p:last-child, ul:last-child, ol:last-child, blockquote:last-child, table:last-ch
 	margin-bottom:0;
 }
 h1,.h1{
-	font-size:3.125em;
+	font-size:2.5em;  /* Reduced from 3.125em */
 	line-height:1.35;
 }
 h2,.h2{
