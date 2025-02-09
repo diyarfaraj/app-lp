@@ -378,8 +378,8 @@ label.error {
 	color:#fff;
 	text-align:center;
 	background-color: #35096b;
-	background-image: -o-linear-gradient(157deg, #ed355b 0%, #1f65db 100%);
-	background-image: linear-gradient(293deg, #ed355b 0%, #1f65db 100%);
+	background-image: -o-linear-gradient(157deg, #00bcd4 0%, #1976d2 100%);
+	background-image: linear-gradient(293deg, #00bcd4 0%, #1976d2 100%);
 	-webkit-transition:all .5s ease;
 	-moz-transition:all .5s ease;
 	transition:all .5s ease;
@@ -466,8 +466,8 @@ label.error {
 .bg-gradiant.mfp-bg,
 .gradiant-background{
 	background-color: #35096b;
-	background-image: -o-linear-gradient(157deg, #ed355b 0%, #1f65db 100%);
-	background-image: linear-gradient(293deg, #ed355b 0%, #1f65db 100%);
+	background-image: -o-linear-gradient(157deg, #00bcd4 0%, #1976d2 100%);
+	background-image: linear-gradient(293deg, #00bcd4 0%, #1976d2 100%);
 }
 
 /* @v120 -s */
@@ -533,8 +533,8 @@ label.error {
 	margin:0 auto;
 	border-radius:50%;
 	background-color: #35096b;
-	background-image: -o-linear-gradient(157deg, #ed355b 0%, #1f65db 100%);
-	background-image: linear-gradient(293deg, #ed355b 0%, #1f65db 100%);
+	background-image: -o-linear-gradient(157deg, #00bcd4 0%, #1976d2 100%);
+	background-image: linear-gradient(293deg, #00bcd4 0%, #1976d2 100%);
 }
 .box-icon .fa,
 .box-icon .ti{
@@ -2733,8 +2733,8 @@ label.error {
 	border-radius:8px;
 	content:"";
 	transition:all .5s ease; /* @v110 */
-	background-image: -o-linear-gradient(157deg, #ED355B 0%, #1F65DB 100%);
-	background-image: linear-gradient(293deg, #ED355B 0%, #1F65DB 100%);
+	background-image: -o-linear-gradient(157deg, #00bcd4 0%, #1976d2 100%);
+	background-image: linear-gradient(293deg, #00bcd4 0%, #1976d2 100%);
 }
 .team-member .team-photo img {
     margin: 0;
