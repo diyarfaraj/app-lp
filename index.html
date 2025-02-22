@@ -75,7 +75,7 @@
  <!--                        <li><a class="nav-item" href="#pricing">Pricing</a></li>
                         <li><a class="nav-item" href="#team">Team</a></li>
                         <li><a class="nav-item" href="#testimonial">Testimonial</a></li> -->
-                        <li><a class="nav-item" href="#contacts">Contacts</a></li>
+                        <li><a class="nav-item" href="#formkeep-embed">Contacts</a></li>
                     </ul>
                 </div><!-- /.navbar-collapse -->
             </div><!-- /.container -->
@@ -148,7 +148,32 @@
 		<div id="statistics"></div>
 		<!-- <div id="pricing"></div> -->
 		<div id="testimonial"></div>
-		<div id="contacts"></div>
+		
+		<!-- CONTACT SECTION -->
+		<div class="section-head text-center">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2">
+					<h2 class="heading">Contact us</h2>
+				</div>
+			</div>
+		</div>
+		<div id="formkeep-embed" data-formkeep-url="https://formkeep.com/p/fb3daad7296ec4bb7c12ae04d655241d?embedded=1"></div>
+
+<script type="text/javascript" src="https://pym.nprapps.org/pym.v1.min.js"></script>
+<script type="text/javascript" src="https://cdn.formkeep.com/formkeep-embed.js"></script>
+
+<!-- Get notified when the form is submitted, add your own code below: -->
+<script>
+const formkeepEmbed = document.querySelector('#formkeep-embed')
+
+formkeepEmbed.addEventListener('formkeep-embed:submitting', _event => {
+  console.log('Submitting form...')
+})
+
+formkeepEmbed.addEventListener('formkeep-embed:submitted', _event => {
+  console.log('Submitted form...')
+})
+</script>
 		<div id="footer"></div>
 		
 		<!-- Preloader !remove please if you do not want -->
