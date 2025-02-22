@@ -3618,3 +3618,10 @@ label.error {
 }
 /* @v131 -s */
 /* End */
+
+
+.hover-blue:hover{
+	color: #1F65DB;
+	border-color: #1F65DB;
+	background: #1F65DB;
+}
