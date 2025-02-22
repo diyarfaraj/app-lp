@@ -62,30 +62,30 @@ Updated	 :	10.22.2018
 }
 .header-texts .button:hover {
 	background: #fff;
-	color: #FA3821;
+	color: #1F65DB;
 }
 .button.button-transparent{
 	background:transparent;
 }
 .button.button-transparent:hover{
 	background: #fff;
-	color: #FA3821;
+	color: #1F65DB;
 	border-color: #fff;
 }
 
 .navbar-default .navbar-nav > li > a.button,
 .navbar-default .navbar-nav > li > a.button:focus{
-	border:2px solid #FA3821;
-	background: #FA3821;
+	border:2px solid #1F65DB;
+	background: #1F65DB;
 }
 .navbar-default .navbar-nav > li > a.button:hover{
-	color: #FA3821;
+	color: #1F65DB;
 }
 .affix .navbar-default .navbar-nav > li > a.button:hover,
 .affix .navbar-default .navbar-nav > li.active > a.button,
 .affix .navbar-default .navbar-nav > li.active > a.button:focus{
-	color: #FA3821;
-	border-color: #FA3821;
+	color: #1F65DB;
+	border-color: #1F65DB;
 }
 
 .gradiant-background,
